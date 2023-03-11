@@ -11,8 +11,8 @@ const router = express.Router();
 
 // routes
 router.post("/register", registerUser);
-//router.post("/login", loginUser);
-//router.post("/find/:userId", findUser);
-//router.get("/", getAllUsers);
+router.post("/login", loginUser);
+router.post("/find/:userId", findUser);
+router.get("/", getAllUsers);
 
 module.exports = router;

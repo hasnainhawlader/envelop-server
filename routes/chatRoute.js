@@ -2,7 +2,7 @@ const express = require("express");
 const {
   createChat,
   findAllChats,
-  findAsSingleChat,
+  findASingleChat,
 } = require("../controllers/chatController");
 const router = express.Router();
 
@@ -11,5 +11,5 @@ const router = express.Router();
 router.post("/", createChat);
 
 router.get("/:userId", findAllChats);
-router.get("/find:firstId/:secondId", findAsSingleChat);
+router.get("/find:firstId/:secondId", findASingleChat);
 module.exports = router;
